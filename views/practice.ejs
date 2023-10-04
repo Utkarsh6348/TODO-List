@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        <%= locals.title %>
+    </title>
+</head>
+<body style="text-align: center;">
+    <h1>This is a Practice EJS.</h1>
+
+    <% for(let i =1 ; i<6;i++){ %>
+     <li><%= i %></li>
+        <% } %>
+
+    <% if(true){ %> 
+        <h1>If condition True</h1>
+    <% }else{ %>
+        <h1> If condition False </h1>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>
+        <%= locals.title%>
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div id="outer1">
+        <h1 class="heading1">Task - List</h1>
+        <ul id="box">
+
+            <% for (let i of contact_list) { %>
+                <div id="contact_box">
+                    <div class="contact" id="contact_info">
+                        <li>
+                            <p id="name">
+                                <%= i.name %>
+                            </p>
+                            <p id="phone">
+                                <%= i.phone %>
+                            </p>
+                        </li>
+                    </div>
+                    <div class="delete-button" id="delete">
+                        <a href="/delete-contact/?id=<%= i._id %>" style="text-decoration: none;">
+                            <img src="http://pluspng.com/img-png/delete-button-png-delete-icon-1600.png" style="width:1.5rem; height: 1.5rem;"/ >
+                        </a>
+                    </div>
+                </div>
+                <% } %>
+        </ul>
+    </div>
+<div id="outer2">
+    <h1 class="heading1">Add Task Form</h1>
+       <form action="/create-contact" method="POST" >
+        <input type="text" name="name" placeholder="Enter Title" required  class="input_form">
+        <input type="text" name="phone" placeholder="Enter Task Detail" required class="input_form"><br/>
+        <button type="submit" id="submit_btn">Add Task</button>
+    </form>
+</div>
+ 
+    <script type="text/javascript" src="/js/home.js"></script>
+</body>
+
+</html>
