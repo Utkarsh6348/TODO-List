@@ -1,0 +1,101 @@
+body{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+#outer1{
+    width: 60vw;
+    height:fit-content;
+    border: 2px solid black;
+    background-color:aqua ;
+}
+
+#outer2{
+    width: 25vw;
+    height: 50vh;
+    border: 2px solid black;
+    background-color: aquamarine;
+}
+
+#contact_box{
+    width: 40vw;
+    height: 10vh;
+    border: 2px solid black;
+    background-color: lightgrey;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
+    border-radius: 2rem;
+}
+
+#contact_info li{
+  height: 100%;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#name{
+    height: 100%;
+    width: 15vw;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+
+#phone{
+    height: 100%;
+    width: 10vw;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-top: 1rem;
+}
+
+
+#box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#delete{
+    height: 100%;
+    width: 10vw;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+
+.input_form{
+    margin-top: 1rem;
+    width: 70%;
+    height: 3rem;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding-left: 1rem;
+
+}
+
+#submit_btn{
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-top: 1rem;
+    font-weight: bold;
+
+}
+
+.heading1{
+    font-size: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color: black;
+}
